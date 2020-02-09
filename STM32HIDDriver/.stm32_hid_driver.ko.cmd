@@ -1,0 +1,1 @@
+cmd_/home/rr/Desktop/LinuxKernelDev/STM32HIDDriver/stm32_hid_driver.ko := ld -r -m elf_x86_64  -z max-page-size=0x200000 -T ./scripts/module-common.lds --build-id  -o /home/rr/Desktop/LinuxKernelDev/STM32HIDDriver/stm32_hid_driver.ko /home/rr/Desktop/LinuxKernelDev/STM32HIDDriver/stm32_hid_driver.o /home/rr/Desktop/LinuxKernelDev/STM32HIDDriver/stm32_hid_driver.mod.o ;  true
