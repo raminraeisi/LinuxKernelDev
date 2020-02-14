@@ -1,0 +1,1 @@
+ACTION=="bind", SUBSYSTEM=="hid", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="5750", ENV{abc}="$id:1.0", RUN+="/bin/sh -c 'echo $abc > /sys/bus/usb/drivers/usbhid/unbind; echo 0483 5750 > /sys/bus/usb/drivers/stm32_hid_driver/new_id'"
