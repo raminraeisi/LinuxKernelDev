@@ -8,8 +8,8 @@
 
 static struct usb_device *device;
 
-#define ML_VENDOR_ID	0x2123
-#define ML_PRODUCT_ID	0x1010
+#define ML_VENDOR_ID	0x0483
+#define ML_PRODUCT_ID	0x5750
 
 #define DEBUG_LEVEL_DEBUG		0x1F
 #define DEBUG_LEVEL_INFO		0x0F
