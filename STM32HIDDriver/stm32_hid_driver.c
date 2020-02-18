@@ -71,6 +71,12 @@ static int drv_probe(struct usb_interface *interface,
 	{
 			endpoint = &iface_desc->endpoint[i].desc;
 
+			if ((endpoint->bEndpointAddress & USB_ENDPOINT_DIR_MASK) == USB_DIR_IN)
+				printk(KERN_INFO "ED[%d] is input", i);
+			else if ((endpoint->bEndpointAddress & USB_ENDPOINT_DIR_MASK) == USB_DIR_OUT)
+					printk(KERN_INFO "ED[%d] is output", i);
+
+
 			printk(KERN_INFO "ED[%d]->bEndpointAddress: 0x%02X\n",
 							i, endpoint->bEndpointAddress);
 			printk(KERN_INFO "ED[%d]->bmAttributes: 0x%02X\n",
